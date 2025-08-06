@@ -113,11 +113,16 @@ Make sure Flask runs at http://localhost:5000
 
 
 
+
+
 🧠 AI Models Used
 
 Gemini Pro via Google Generative AI API
 
 all-MiniLM-L6-v2 from sentence-transformers
+
+
+
 
 
 
@@ -127,6 +132,9 @@ all-MiniLM-L6-v2 from sentence-transformers
 "Delete my lunch with Sam"
 
 "What tasks do I have next Tuesday?"
+
+
+
 
 
 
