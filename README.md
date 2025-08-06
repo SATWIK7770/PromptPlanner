@@ -53,24 +53,24 @@ prompt-planner/
 
 ├── public/ # Frontend
 
-  ├── index.html
+|├── index.html
 
-  └── script.js
+|└── script.js
 
-  ├── styles.css
+|├── styles.css
 
 ├── js-backend/ # Node.js backend
 
-  ├── server.js.js
+|├── server.js.js
 
 
 ├── python-backend/ # Sentence similarity Flask server
 
-  ├── app.py
+|├── app.py
 
-  ├── venv/ # Python virtual environment
+|├── venv/ # Python virtual environment
 
-  └── requirements.txt
+|└── requirements.txt
 
 
 ## 🗂️ Project Setup
@@ -78,24 +78,39 @@ prompt-planner/
 1. Clone the Repository
 
 git clone https://github.com/SATWIK7770/PromptPlanner.git
+
 cd prompt-planner
+
 
 2. 🧠 Gemini + Express Server Setup
 cd server
+
 npm install
+
   Add your Gemini API key to .env
+  
   MONGO_URI=<your-mongodb-uri>
+  
   GEMINI_API_KEY=<your-gemini-api-key>
+  
 node server.js
 
-3. 🤖 Sentence Similarity Flask Server
+
+4. 🤖 Sentence Similarity Flask Server
+   
 cd python-backend
+
 python -m venv venv
+
 venv\Scripts\activate
+
 pip install -r requirements.txt
+
 python app.py
 
+
 Make sure Flask runs at http://localhost:5000
+
 
 
 🧠 AI Models Used
@@ -105,12 +120,14 @@ Gemini Pro via Google Generative AI API
 all-MiniLM-L6-v2 from sentence-transformers
 
 
+
 🧪 Sample Prompts
 "Create a meeting with team at 3 PM tomorrow"
 
 "Delete my lunch with Sam"
 
 "What tasks do I have next Tuesday?"
+
 
 
 📌 Notes
