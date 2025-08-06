@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('taskForm').addEventListener('submit', addTask);
     document.getElementById('editForm').addEventListener('submit', saveEdit);
     document.getElementById('selectedDate').addEventListener('change', () =>{const selectedDate = document.getElementById('selectedDate').value;loadTasksForDate(selectedDate)});
-    document.getElementById('promptForm').addEventListener('submit', handlePrompt); // Updated to form submit
+    document.getElementById('promptForm').addEventListener('submit', handlePrompt); 
 
     loadTasksForDate(today);
 });
@@ -299,5 +299,6 @@ async function handlePrompt(e) {
 
     promptTextarea.value = '';
     document.getElementById("agentMsg").innerText = "";
+
 
 }
