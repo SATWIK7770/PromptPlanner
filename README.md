@@ -53,26 +53,24 @@ prompt-planner/
 
 ├── public/ # Frontend
 
-│ ├── index.html
+  ├── index.html
 
-│ └── script.js
+  └── script.js
 
-| ├── styles.css
+  ├── styles.css
 
-│
 ├── js-backend/ # Node.js backend
 
-│ ├── server.js.js
+  ├── server.js.js
 
-│
 
 ├── python-backend/ # Sentence similarity Flask server
 
-│ ├── app.py
+  ├── app.py
 
-│ ├── venv/ # Python virtual environment
+  ├── venv/ # Python virtual environment
 
-│ └── requirements.txt
+  └── requirements.txt
 
 
 ## 🗂️ Project Setup
@@ -85,9 +83,9 @@ cd prompt-planner
 2. 🧠 Gemini + Express Server Setup
 cd server
 npm install
-# Add your Gemini API key to .env
-# MONGO_URI=<your-mongodb-uri>
-# GEMINI_API_KEY=<your-gemini-api-key>
+  Add your Gemini API key to .env
+  MONGO_URI=<your-mongodb-uri>
+  GEMINI_API_KEY=<your-gemini-api-key>
 node server.js
 
 3. 🤖 Sentence Similarity Flask Server
