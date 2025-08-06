@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Scheduler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Daily Scheduler</h1>
+
+    <!-- AI Prompt Section -->
+    <div class="section">
+        <h2>Manage via AI</h2>
+        <form id="promptForm">
+            <textarea id="promptInput" placeholder="Enter a prompt..."></textarea>
+            <br>
+            <p id = "agentMsg"></p>
+            <button type="submit" id="promptSubmit">Apply</button>
+        </form>
+    </div>
+
+    <!-- Add Task Section -->
+    <div class="section">
+        <h2>Add Task</h2>
+        <form id="taskForm">
+            <label>Title:</label><br>
+            <input type="text" id="taskTitle"><br><br>
+
+            <label>Description:</label><br>
+            <textarea id="taskDescription"></textarea><br><br>
+
+            <label>Date:</label><br>
+            <input type="date" id="taskDate"><br><br>
+
+            <label>Time:</label><br>
+            <input type="time" id="taskTime"><br><br>
+
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+
+    <!-- View Tasks Section -->
+    <div class="section">
+        <h2>Tasks</h2>
+        <label>Select Date:</label>
+        <input type="date" id="selectedDate">
+        <div id="tasksList"></div>
+    </div>
+
+    <!-- Edit Task dialog box-->
+    <div id="editBox" style="display: none;">
+        <div id="boxContent">
+            <h3>Edit Task</h3>
+            <form id="editForm">
+                <label>Title:</label><br>
+                <input type="text" id="editTitle"><br><br>
+
+                <label>Description:</label><br>
+                <textarea id="editDescription"></textarea><br><br>
+
+                <label>Date:</label><br>
+                <input type="date" id="editDate"><br><br>
+
+                <label>Time:</label><br>
+                <input type="time" id="editTime"><br><br>
+
+                <button type="submit">Save</button>
+                <button type="button" onclick="closeBox()">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
